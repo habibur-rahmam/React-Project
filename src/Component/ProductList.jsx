@@ -5,7 +5,7 @@ const ProductList = ({ productslist }) => {
     <div className="flex justify-center items-center gap-20 flex-wrap">
       {productslist &&
         productslist.products.map((product, index) => (
-          <div className="border flex flex-col" key={index}>
+          <div className="border flex flex-col py-3" key={index}>
             <img
               src={product.images[0]}
               alt="product"
