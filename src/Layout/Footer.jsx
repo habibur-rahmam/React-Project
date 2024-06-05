@@ -1,9 +1,9 @@
 import Logo from '../assets/avada-logo.svg';
-import FooterContent from './Navlist';
+import FooterItems from './Navlist';
 
 const Footer = () => {
   return (
-    <div className='bg-white p-5 w-full'>
+    <div className='bg-white p- w-full'>
       <div className=" max-w-[1140px] mx-auto flex justify-between py-16 grid-cols-3 bg-white">
         <div className="w-80">
         <>
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         <div className="w-3/1">
-          <FooterContent />
+          <FooterItems />
         </div>
 
         <div className="w-1/3">

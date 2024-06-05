@@ -16,7 +16,7 @@ function App() {
     fetchProducts();
   }, []);
   return (
-    <div className="max-w-[1140px] m-auto my-10 ">
+    <div className="max-w-[1140px] m-auto  ">
       <Header />
       <h1 className="text-lg font-bold text-center my-10 uppercase">All Product List</h1>
  

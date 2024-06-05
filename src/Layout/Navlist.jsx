@@ -1,4 +1,4 @@
-const FooterContent = () => {
+const FooterItems = () => {
   return (
     <>
         <div className="w-3/1">
@@ -14,4 +14,4 @@ const FooterContent = () => {
     </>
   )
 }
-export default FooterContent;
+export default FooterItems;

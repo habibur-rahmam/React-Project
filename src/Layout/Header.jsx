@@ -3,7 +3,7 @@ import Navmenu from './Navmenu';
 
 const Header = () => {
   return (
-    <div className="bg-white p-5 w-full">
+    <div className="bg-white pt-10 pb-5 w-full">
       <div className='max-w-[1140px] mx-auto flex justify-between items-center'>
         <div className="logo">
           <a href="#">
