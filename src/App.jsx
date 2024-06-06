@@ -4,11 +4,11 @@ import Router from "./Router/Router";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Router />
-      <Footer />
-    </div>
+      <div>
+        <Header/>
+        <Router />
+        <Footer/>
+      </div>
   );
 };
 

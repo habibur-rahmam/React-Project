@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import ProductList from './../Component/ProductList';
-
-
+import ProductList from '../Component/ProductList';
 
 function App() {
   const [productslist, setProductslist] = useState();

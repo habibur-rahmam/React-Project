@@ -1,14 +1,11 @@
 const Navmenu = () => {
     const routes = [
-      { Name:"Home",
-      path: "/Home",
+      { Name:"All Product",
+      path: "/Product",
 
       },
       {Name:"Services",
         path:"/Services",
-      },
-      {Name:" All Product",
-        path:"/All Product",
       },
       {Name:"About",
         path:"/About",
