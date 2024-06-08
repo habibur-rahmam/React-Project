@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 const SingleProduct = () => {
     const [product, setProduct] = useState(null);
 
+
     useEffect(() => {
         const fetchProduct = async () => {
             const response = await fetch("https://dummyjson.com/products/1");
@@ -32,7 +33,7 @@ const SingleProduct = () => {
                     </div>
                     
                 ) : (
-                    <p onClick={"Loading"} className="text-black capitalize text-xxl font-bold py-8">Loading Single Product...</p>
+                    <p className="text-black capitalize text-xxl font-bold py-8">Loading Single Product...</p>
                 )}
             </div>
         </div>
