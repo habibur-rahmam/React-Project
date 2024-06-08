@@ -4,8 +4,8 @@ const Navmenu = () => {
       path: "/Product",
 
       },
-      {Name:"Services",
-        path:"/Services",
+      {Name:"Single Product",
+        path:"/SingleProduct",
       },
       {Name:"About",
         path:"/About",
