@@ -11,16 +11,16 @@ const ProductList = ({ productslist }) => {
               alt="product"
               className="w-full max-w-[400px] max-h-[400px] object-cover"/>
             <div className="flex justify-between p-3">
-              <h3>{product.title}</h3>
+              <h3> Titel : {product.title}</h3>
               <p>Price: ${product.price}</p>
             </div>
             <hr />
             <div className="flex justify-between p-2">
-              <h3>{product.category}</h3>
-              <p>{product.brand}</p>
+              <h3>Category : {product.category}</h3>
+              <p>Brand : {product.brand}</p>
             </div>
 
-            <div className="mb-2 text-center">
+            <div className="py-3 text-center">
               <button className="bg-green-700 text-white py-3 px-5 rounded-sm ">
                 Add to Cart
               </button>

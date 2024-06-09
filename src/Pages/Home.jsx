@@ -15,16 +15,9 @@ function App() {
     fetchProducts();
   }, [count]);
 
-
-
   return (
     <div className="max-w-[1140px] m-auto py-10">
-      {productslist ? (
-        <ProductList productslist={productslist} />
-      ) : (
-        <p className="text-center text-black font-xxl font-bold">Loading All Product ...</p>
-      )}
-
+      <ProductList productslist={productslist} />
     </div>
   );
 }
