@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-
+import { Link } from "react-router-dom";
 const ProductList = ({ productslist }) => {
   return (
     <div className="flex justify-center items-center gap-20 flex-wrap">
       {productslist &&
-        productslist.products.map((product, index) => (
-          <div className="border flex flex-col py-3" key={index}>
+        productslist.products.map((product, id) => (
+          <div className="border flex flex-col py-3" key={id}>
             <img
               src={product.images[0]}
               alt="product"
@@ -21,9 +21,12 @@ const ProductList = ({ productslist }) => {
             </div>
 
             <div className="py-3 text-center">
-              <button className="bg-green-700 text-white py-3 px-5 rounded-sm ">
-                Add to Cart
-              </button>
+            <Link
+                to={`/products/${product.id}`}>
+                {<button id="btn" className="bg-green-700 text-white py-3 px-5 rounded-sm capitalize">
+                view Product
+              </button>} 
+              </Link>
             </div>
           </div>
         ))}

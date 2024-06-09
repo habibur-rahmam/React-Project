@@ -3,7 +3,6 @@ import ProductList from '../Component/ProductList';
 
 function App() {
   const [productslist, setProductslist] = useState(null);
-  const [count] = useState(0);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -13,7 +12,11 @@ function App() {
     };
 
     fetchProducts();
-  }, [count]);
+  }, []);
+  if (productslist === null) {
+    return <div>Loading...</div>;
+  }
+
 
   return (
     <div className="max-w-[1140px] m-auto py-10">
