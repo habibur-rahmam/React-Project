@@ -13,7 +13,7 @@ const ProductBox = ({ title, price, catagory, tag })  => {
           <p className="text-sm text-black capitalize">{tag}</p>
         </div>
         <div className="mt-3 mb-3 text-center">
-          <button className="bg-green-600 text-white py-2 px-5 rounded-sm text-sm uppercase">Add product</button>
+          <button className="bg-green-500 text-white py-2 px-5 rounded-sm text-sm uppercase">Add product</button>
         </div>
       </div>
     );
