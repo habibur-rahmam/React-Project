@@ -31,7 +31,7 @@ const SingleProduct = () => {
                 <p className=" text-center text-lg">Brand : {product.brand}</p>
                 <p className="text-lg">Price: ${product.price}</p>
                 </div>
-                <button className="bg-green-500 text-white py-3 px-5 rounded-sm mt-3">Add to Cart</button>
+                <button className="bg-green-500 text-white py-3 px-5 rounded-sm mt-3">Buy Now</button>
 
             </div>
     </div>

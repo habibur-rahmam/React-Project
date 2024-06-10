@@ -6,7 +6,7 @@ const ProductList = ({ productslist }) => {
       {productslist &&
         productslist.products.map((product, id) => (
           <div className="border flex flex-col py-3" key={id}>
-            <img src={product.images[0]}alt="product image"
+                 <img src={product.images[0]}alt="product image"
               className="w-full max-w-[400px] max-h-[400px] object-cover"/>
             <div className="flex justify-between p-3">
               <h3> Titel : {product.title}</h3>
@@ -21,9 +21,7 @@ const ProductList = ({ productslist }) => {
             <div className="py-3 text-center">
             <Link
                 to={`/products/${product.id}`}>
-                {<button id="btn" className="bg-green-500 text-white py-3 px-5 rounded-sm capitalize">
-                view Product
-              </button>} 
+                  <button className="bg-green-500 text-white py-3 px-5 rounded-sm mt-3 capitalize">add to cart</button>
               </Link>
             </div>
           </div>
