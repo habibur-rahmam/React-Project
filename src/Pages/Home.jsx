@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import ProductList from '../Component/ProductList';
+import LoadingPage from "../Component/LoadingPage";
+
 
 function App() {
   const [productslist, setProductslist] = useState(null);
@@ -14,7 +16,7 @@ function App() {
     fetchProducts();
   }, []);
   if (productslist === null) {
-    return <div>Loading...</div>;
+    return <div>{<LoadingPage/>}</div>;
   }
 
 

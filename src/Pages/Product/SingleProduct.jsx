@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
+import LoadingPage from "../../Component/LoadingPage";
 
 const SingleProduct = () => {
   const [product, setProduct] = useState(null);
@@ -16,7 +17,7 @@ const SingleProduct = () => {
   }, [id]);
 
   if (product === null) {
-    return <div>Loading...</div>;
+    return <div>{<LoadingPage/>}</div>;
   }
 
   return (

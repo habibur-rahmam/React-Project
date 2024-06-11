@@ -21,7 +21,7 @@ const ProductList = ({ productslist }) => {
             <div className="py-3 text-center">
             <Link
                 to={`/products/${product.id}`}>
-                  <button className="bg-green-500 text-white py-3 px-5 rounded-sm mt-3 capitalize">add to cart</button>
+                  <button className="bg-green-500 text-white py-3 px-5 rounded-sm mt-3 capitalize">View Product</button>
               </Link>
             </div>
           </div>

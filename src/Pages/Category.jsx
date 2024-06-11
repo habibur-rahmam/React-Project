@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import LoadingPage from './../Component/LoadingPage';
 
 const Category = () => {
   const [allCategory, setAllCategory] = useState([]);
@@ -11,7 +12,7 @@ const Category = () => {
       const response = await fetch('https://dummyjson.com/products/categories');
       const data = await response.json();
       setAllCategory(data);
-      setLoading(false); // Set loading state to false
+      setLoading(false);
     };
     fetchCategories();
   }, []);
@@ -19,7 +20,7 @@ const Category = () => {
 
   return (
     <div>
-    {loading ? (<p>Loading</p>) : (
+    {loading ? (<LoadingPage/>) : (
       
       <div>
       <div className="grid grid-cols-4 gap-5 p-10">

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CatagoryTwo from "../Pages/CategoryTwo";
+import LoadingPage from './../Component/LoadingPage';
 
 const SingleCategory = () => {
     const {singleCategory} = useParams()
@@ -20,7 +21,7 @@ const SingleCategory = () => {
 
   return (
     <>
-      {Loading ? (<p>Loading</p>) : (
+      {Loading ? (<LoadingPage/>) : (
         <CatagoryTwo categoryProducts ={category} categoryName ={singleCategory}/>
       )}
     </>

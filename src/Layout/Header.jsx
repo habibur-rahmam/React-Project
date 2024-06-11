@@ -14,7 +14,7 @@ const Header = () => {
           <Navmenu />
         </div>
         <div className="button">
-          <button className='bg-green-500 text-white hover:text-green-500 hover:bg-white border border-green-500 font-medium py-2 px-4 rounded uppercase'> All Product</button>
+          <button className='bg-green-500 text-white hover:text-green-500 hover:bg-white border border-green-500 font-medium py-2 px-4 rounded capitalize'> All Product</button>
         </div>
       </div>
     </div>
