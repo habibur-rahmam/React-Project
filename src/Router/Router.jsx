@@ -10,7 +10,7 @@ const Router = () => {
     <Layout>
       <Routes>
         <Route path="/Home" element={<Home />} />
-        <Route path="category" element={<Category />} />
+        <Route path="/category" element={<Category />} />
         <Route path='/all-category/:singleCategory' element={<SingleCategory />}/>
         <Route path="/products/:id" element={<SingleProduct />} />
       </Routes>

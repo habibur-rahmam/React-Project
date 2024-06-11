@@ -16,7 +16,7 @@ function LoadingPage() {
   return (
     <div className="m m-auto pt-4 w-[100%] flex justify-center">
       {isLoading && (
-        <img className="justify-center items-center align-middle text-center flex flex-wrap w-[20%]" src={Loading} alt="Loading" />
+        <img className="justify-center items-center align-middle text-center flex flex-wrap w-[20%]" src={Loading} alt="Loading Image" />
       )}
     </div>
   );
